@@ -1,0 +1,333 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    overflow: auto;
+}
+
+.box{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(70, 70, 70, 0.479);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-box{
+    width: 80%;
+    height: 80%;
+    /* background-color: blueviolet; */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(70, 70, 70, 0.479);
+    position: relative;
+}
+
+.inner-one{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(129, 129, 129);
+    border: 5px solid white;
+    border-radius: 50%;
+    top: 35px;
+    left: 70px;
+}
+
+.inner-two{
+    width: 100%;
+    height: 25%;
+    background-color: rgb(3, 146, 255);
+}
+
+.inner-three{
+    width: 100%;
+    height: 33%;
+    /* background-color: #ddd; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    gap: 5px;
+}
+
+.inner-three h3{
+    color: rgb(3, 146, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+.inner-three P{
+    margin-bottom: 15px;
+}
+
+.inner-four{
+    width: 100%;
+    height: 20%;
+    /* background-color: #ddd; */
+}
+
+.first-row,.second-row{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.first-row,.second-row{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+.second-row{
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(3, 146, 255);
+}
+
+.inner-five{
+    width: 100%;
+    height: 23%;
+    /* background-color: #ddd; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inner-five button{
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid  rgb(5, 102, 176);
+}
+
+
+#follow{
+    background-color:  rgb(3, 146, 255);
+    color: white;  
+}
+
+#follow:hover{
+    background-color: white;
+    color:  rgb(3, 146, 255);  
+}
+
+
+#message{
+    background-color: white;
+    color:  rgb(3, 146, 255);
+}
+
+#message:hover{
+    background-color:  rgb(3, 146, 255);
+    color: white;
+}
+
+/* --two-- */
+
+.two .inner-two{
+    background-color: #CA2242;
+}
+
+.two .inner-three h3{
+    color: #CA2242;
+}
+
+.two .second-row{
+    color: #CA2242;
+}
+
+.two .inner-five button{
+    border: 1px solid  #CA2242;
+}
+
+.two #follow{
+    background-color:  #CA2242;
+    color: white;  
+}
+
+.two #follow:hover{
+    background-color: white;
+    color:  #CA2242;  
+}
+
+
+.two #message{
+    background-color: white;
+    color: #CA2242;
+}
+
+.two #message:hover{
+    background-color: #CA2242;
+    color: white;
+}
+
+/* --three-- */
+
+.three .inner-two{
+    background-color: #0D7C48;
+}
+
+.three .inner-three h3{
+    color: #0D7C48;
+}
+
+.three .second-row{
+    color: #0D7C48;
+}
+
+.three .inner-five button{
+    border: 1px solid  #0D7C48;
+}
+
+.three #follow{
+    background-color:  #0D7C48;
+    color: white;  
+}
+
+.three #follow:hover{
+    background-color: white;
+    color:  #0D7C48;  
+}
+
+
+.three #message{
+    background-color: white;
+    color: #0D7C48;
+}
+
+.three #message:hover{
+    background-color: #0D7C48;
+    color: white;
+}
+
+
+/* --four-- */
+
+.four .inner-two{
+    background-color: #72428A;
+}
+
+.four .inner-three h3{
+    color: #72428A;
+}
+
+.four .second-row{
+    color: #72428A;
+}
+
+.four .inner-five button{
+    border: 1px solid  #72428A;
+}
+
+.four #follow{
+    background-color:  #72428A;
+    color: white;  
+}
+
+.four #follow:hover{
+    background-color: white;
+    color:  #72428A;  
+}
+
+
+.four #message{
+    background-color: white;
+    color: #72428A;
+}
+
+.four #message:hover{
+    background-color: #72428A;
+    color: white;
+}
+
+
+
+/* --five-- */
+
+.five .inner-two{
+    background-color: #C58E21;
+}
+
+.five .inner-three h3{
+    color: #C58E21;
+}
+
+.five .second-row{
+    color: #C58E21;
+}
+
+.five .inner-five button{
+    border: 1px solid  #C58E21;
+}
+
+.five #follow{
+    background-color:  #C58E21;
+    color: white;  
+}
+
+.five #follow:hover{
+    background-color: white;
+    color:  #C58E21;  
+}
+
+
+.five #message{
+    background-color: white;
+    color: #C58E21;
+}
+
+.five #message:hover{
+    background-color: #C58E21;
+    color: white;
+}
+
+.one .inner-one{
+    background-image: url(./Images/one.png);
+    background-size: cover;
+}
+
+.two .inner-one{
+    background-image: url(./Images/two.png);
+    background-size: cover;
+}
+
+.three .inner-one{
+    background-image: url(./Images/three.png);
+    background-size: cover;
+}
+
+.four .inner-one{
+    background-image: url(./Images/four.png);
+    background-size: cover;
+}
+
+.five .inner-one{
+    background-image: url(./Images/five.png);
+    background-size: cover;
+}
