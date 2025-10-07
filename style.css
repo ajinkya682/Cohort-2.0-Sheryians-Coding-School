@@ -1,88 +1,178 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    width: 100%;
-    height: 100%;
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
-.main{
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    flex-wrap: wrap;
-    perspective: 1000px;
+.scroll {
+  width: 100%;
+  max-width: 100vw;
+  height: 180px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  border-radius: 15px;
 }
 
-.profile{
-    width: 300px;
-    height: 300px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(79, 79, 79, 0.583);
+.track {
+  display: flex;
+  animation: scroll 18s linear infinite;
+}
+
+.image {
+  width: 200px;
+  height: 150px;
+  margin: 15px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  background: linear-gradient(145deg, #eaeaea, #ffffff);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.image:nth-child(1){
+    background-image: url(https://cdn.dribbble.com/userupload/43838672/file/original-d6313eb40eac20ba2f4dd8638b3067cf.jpg);
     background-size: cover;
-    background-position: bottom;
-    position: relative;
-    overflow: hidden;
+    background-position: center;
 }
 
-.profile:nth-child(1){
-    background-image: url(https://images.unsplash.com/photo-1610361418971-50cb8d1f8339?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGFqbWFoYWx8ZW58MHx8MHx8fDA%3D);
+.image:nth-child(2){
+    background-image: url(https://cdn.dribbble.com/userupload/43200390/file/original-ade45dbb987e40dd76cad00f5cc7be23.png);
+    background-size: cover;
+    background-position: center;
 }
 
-.profile:nth-child(2){
-    background-image: url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqCRwhHVB_kldmrohozhcCuRoCDOSS_8yb7Rc2Pp3ZOjqUC-RKm_n3cT0fJE4h7W21GVBUil8sbDiG4yS99do9uPp7YIZFQZucnQxH3DxT8m4PJqjGzH7Wtyx1p5PQZNYMXMpOvBw=s680-w680-h510-rw);
+.image:nth-child(3){
+    background-image: url(https://cdn.dribbble.com/userupload/15184514/file/original-04ed74e535d5cb44134d01637dcd9051.png);
+    background-size: cover;
+    background-position: center;
 }
 
-.profile:nth-child(3){
-    background-image: url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4noZ3q_pq9oBKbS6awAaQXvkHPBcss-mmuwSofgLQ84W1lNktdEGta_2z2X-Yi42DBoZ8-3db7Ex3Yhl72q3wwENI7kUZY34B97Bn7kkT3dH_TIthI46eJ0lwpnOEHZdrz2N3KQ=w243-h174-n-k-no-nu);
+.image:nth-child(4){
+    background-image: url(https://cdn.dribbble.com/userupload/43195212/file/original-d5fb5256d8fb1606b0a086953601ef4f.png);
+    background-size: cover;
+    background-position: center;
 }
 
-.profile:nth-child(4){
-    background-image: url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqlnthf53ntVHqxFsUivMxIwpBqE7JvuxaHvQSx0qeNBIcWrJ7cDP0rfczT3ccTrCHUvtrsHlfSx6EF-q1gT7AEWu5hqL9MXPRJCDcze_iep5ETh3rrpXH9sBloQ1A7MnsJCgzD=w270-h312-n-k-no);
+.image:nth-child(5){
+    background-image: url(https://cdn.dribbble.com/userupload/14815024/file/original-61e8bed9aa0cdc9db19991a38765b134.png);
+    background-size: cover;
+    background-position: center;
 }
 
-.bottom{
-    width: 100%;
-    height: 80px;
-    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.728));
-    position: absolute;
-    top: 300px;
-    color: white;
-    font-family: sans-serif;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+.image:nth-child(6){
+    background-image: url(https://cdn.dribbble.com/userupload/18025563/file/original-8921532f920ced8a0e45d580cba5c49f.png);
+    background-size: cover;
+    background-position: center;
 }
 
-.bottom img{
-    height: 110%;
-    border-radius: 50%;
+.image:nth-child(7){
+    background-image: url(https://cdn.dribbble.com/userupload/17042632/file/original-50e7b60cbca2a2be03ce7f920dab26a2.png);
+    background-size: cover;
+    background-position: center;
 }
 
-
-.bottom img:hover{
-    transform: scale(1.1);
-    transition: all ease 0.2s;
+.image:nth-child(8){
+    background-image: url(https://cdn.dribbble.com/userupload/45196825/file/1a9fddf16a2ceed4b1c89dd4c8df25f6.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.profile:hover{
-    transform: rotateX(25deg);
-    width: 350px;
-    height: 350px;
-    transition: all ease 0.5s;
+.image:nth-child(9){
+    background-image: url(https://cdn.dribbble.com/userupload/45195790/file/7f984568b25cce6b093e78e04611ac56.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.profile:hover .bottom{
-    top: 270px;
-    transition: all ease 0.5s;
+.image:nth-child(10){
+    background-image: url(https://cdn.dribbble.com/userupload/45191556/file/73e88590bd02ee77e24175c815265682.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image:nth-child(11){
+    background-image: url(https://cdn.dribbble.com/userupload/45192560/file/255f8a6848e9c7b02184d96a311234e0.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image:nth-child(12){
+    background-image: url(https://cdn.dribbble.com/userupload/45194982/file/still-7a560ceacf8771fe9ad3512404fd7d4d.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.image:nth-child(13){
+    background-image: url(https://cdn.dribbble.com/userupload/45196552/file/20959cbc73d73d9f12e01077e010adeb.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image:nth-child(14){
+    background-image: url(https://cdn.dribbble.com/userupload/45140581/file/4089dc4914f0b7e81a6904404f17ca78.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.image:nth-child(15){
+    background-image: url(https://cdn.dribbble.com/userupload/45201619/file/9f39765062f9b426ce0f357fc1a82f7b.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image:nth-child(16){
+    background-image: url(https://cdn.dribbble.com/userupload/45193757/file/still-d0610544125271ba5abe1b21c7ef2048.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image:nth-child(17){
+    background-image: url(https://cdn.dribbble.com/userupload/45198227/file/a85ac143edd5d44dded76df6a2019f3a.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image:nth-child(18){
+    background-image: url(https://cdn.dribbble.com/userupload/44405482/file/99a5e8ed656988c71da7a68932508347.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image:nth-child(19){
+    background-image: url(https://cdn.dribbble.com/userupload/45192467/file/7b1c16db04712eb1d40b37d3a68b0bf5.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.image:nth-child(20){
+    background-image: url(https://cdn.dribbble.com/userupload/45187685/file/1065a36c90fa9cdc3d4925fa68b17c01.png);
+    background-size: cover;
+    background-position: center;
 }
