@@ -1,6 +1,6 @@
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -9,325 +9,80 @@ html,body{
     height: 100%;
 }
 
-#main{
+.main{
     width: 100%;
     height: 100%;
     background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5%;
     flex-wrap: wrap;
-    gap: 40px;
-    overflow: auto;
+    perspective: 1000px;
 }
 
-.box{
+.profile{
     width: 300px;
-    height: 400px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px rgba(70, 70, 70, 0.479);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.inner-box{
-    width: 80%;
-    height: 80%;
-    /* background-color: blueviolet; */
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(70, 70, 70, 0.479);
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(79, 79, 79, 0.583);
+    background-size: cover;
+    background-position: bottom;
     position: relative;
+    overflow: hidden;
 }
 
-.inner-one{
+.profile:nth-child(1){
+    background-image: url(https://images.unsplash.com/photo-1610361418971-50cb8d1f8339?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGFqbWFoYWx8ZW58MHx8MHx8fDA%3D);
+}
+
+.profile:nth-child(2){
+    background-image: url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqCRwhHVB_kldmrohozhcCuRoCDOSS_8yb7Rc2Pp3ZOjqUC-RKm_n3cT0fJE4h7W21GVBUil8sbDiG4yS99do9uPp7YIZFQZucnQxH3DxT8m4PJqjGzH7Wtyx1p5PQZNYMXMpOvBw=s680-w680-h510-rw);
+}
+
+.profile:nth-child(3){
+    background-image: url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4noZ3q_pq9oBKbS6awAaQXvkHPBcss-mmuwSofgLQ84W1lNktdEGta_2z2X-Yi42DBoZ8-3db7Ex3Yhl72q3wwENI7kUZY34B97Bn7kkT3dH_TIthI46eJ0lwpnOEHZdrz2N3KQ=w243-h174-n-k-no-nu);
+}
+
+.profile:nth-child(4){
+    background-image: url(https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqlnthf53ntVHqxFsUivMxIwpBqE7JvuxaHvQSx0qeNBIcWrJ7cDP0rfczT3ccTrCHUvtrsHlfSx6EF-q1gT7AEWu5hqL9MXPRJCDcze_iep5ETh3rrpXH9sBloQ1A7MnsJCgzD=w270-h312-n-k-no);
+}
+
+.bottom{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.728));
     position: absolute;
-    width: 90px;
-    height: 90px;
-    background-color: rgb(129, 129, 129);
-    border: 5px solid white;
+    top: 300px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.bottom img{
+    height: 110%;
     border-radius: 50%;
-    top: 35px;
-    left: 70px;
-}
-
-.inner-two{
-    width: 100%;
-    height: 25%;
-    background-color: rgb(3, 146, 255);
-}
-
-.inner-three{
-    width: 100%;
-    height: 33%;
-    /* background-color: #ddd; */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: end;
-    gap: 5px;
-}
-
-.inner-three h3{
-    color: rgb(3, 146, 255);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 600;
-}
-
-.inner-three P{
-    margin-bottom: 15px;
-}
-
-.inner-four{
-    width: 100%;
-    height: 20%;
-    /* background-color: #ddd; */
-}
-
-.first-row,.second-row{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.first-row,.second-row{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    font-size: 25px;
 }
 
 
-.second-row{
-    font-weight: 400;
-    font-size: 20px;
-    color: rgb(3, 146, 255);
+.bottom img:hover{
+    transform: scale(1.1);
+    transition: all ease 0.2s;
 }
 
-.inner-five{
-    width: 100%;
-    height: 23%;
-    /* background-color: #ddd; */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.profile:hover{
+    transform: rotateX(25deg);
+    width: 350px;
+    height: 350px;
+    transition: all ease 0.5s;
 }
 
-.inner-five button{
-    width: 100px;
-    height: 35px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid  rgb(5, 102, 176);
-}
-
-
-#follow{
-    background-color:  rgb(3, 146, 255);
-    color: white;  
-}
-
-#follow:hover{
-    background-color: white;
-    color:  rgb(3, 146, 255);  
-}
-
-
-#message{
-    background-color: white;
-    color:  rgb(3, 146, 255);
-}
-
-#message:hover{
-    background-color:  rgb(3, 146, 255);
-    color: white;
-}
-
-/* --two-- */
-
-.two .inner-two{
-    background-color: #CA2242;
-}
-
-.two .inner-three h3{
-    color: #CA2242;
-}
-
-.two .second-row{
-    color: #CA2242;
-}
-
-.two .inner-five button{
-    border: 1px solid  #CA2242;
-}
-
-.two #follow{
-    background-color:  #CA2242;
-    color: white;  
-}
-
-.two #follow:hover{
-    background-color: white;
-    color:  #CA2242;  
-}
-
-
-.two #message{
-    background-color: white;
-    color: #CA2242;
-}
-
-.two #message:hover{
-    background-color: #CA2242;
-    color: white;
-}
-
-/* --three-- */
-
-.three .inner-two{
-    background-color: #0D7C48;
-}
-
-.three .inner-three h3{
-    color: #0D7C48;
-}
-
-.three .second-row{
-    color: #0D7C48;
-}
-
-.three .inner-five button{
-    border: 1px solid  #0D7C48;
-}
-
-.three #follow{
-    background-color:  #0D7C48;
-    color: white;  
-}
-
-.three #follow:hover{
-    background-color: white;
-    color:  #0D7C48;  
-}
-
-
-.three #message{
-    background-color: white;
-    color: #0D7C48;
-}
-
-.three #message:hover{
-    background-color: #0D7C48;
-    color: white;
-}
-
-
-/* --four-- */
-
-.four .inner-two{
-    background-color: #72428A;
-}
-
-.four .inner-three h3{
-    color: #72428A;
-}
-
-.four .second-row{
-    color: #72428A;
-}
-
-.four .inner-five button{
-    border: 1px solid  #72428A;
-}
-
-.four #follow{
-    background-color:  #72428A;
-    color: white;  
-}
-
-.four #follow:hover{
-    background-color: white;
-    color:  #72428A;  
-}
-
-
-.four #message{
-    background-color: white;
-    color: #72428A;
-}
-
-.four #message:hover{
-    background-color: #72428A;
-    color: white;
-}
-
-
-
-/* --five-- */
-
-.five .inner-two{
-    background-color: #C58E21;
-}
-
-.five .inner-three h3{
-    color: #C58E21;
-}
-
-.five .second-row{
-    color: #C58E21;
-}
-
-.five .inner-five button{
-    border: 1px solid  #C58E21;
-}
-
-.five #follow{
-    background-color:  #C58E21;
-    color: white;  
-}
-
-.five #follow:hover{
-    background-color: white;
-    color:  #C58E21;  
-}
-
-
-.five #message{
-    background-color: white;
-    color: #C58E21;
-}
-
-.five #message:hover{
-    background-color: #C58E21;
-    color: white;
-}
-
-.one .inner-one{
-    background-image: url(./Images/one.png);
-    background-size: cover;
-}
-
-.two .inner-one{
-    background-image: url(./Images/two.png);
-    background-size: cover;
-}
-
-.three .inner-one{
-    background-image: url(./Images/three.png);
-    background-size: cover;
-}
-
-.four .inner-one{
-    background-image: url(./Images/four.png);
-    background-size: cover;
-}
-
-.five .inner-one{
-    background-image: url(./Images/five.png);
-    background-size: cover;
+.profile:hover .bottom{
+    top: 270px;
+    transition: all ease 0.5s;
 }
