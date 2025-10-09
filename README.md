@@ -1,1 +1,1 @@
-![Website Design](Website Design.png)
+![Website Design](Website%20Design.png)
