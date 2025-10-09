@@ -432,13 +432,39 @@ about-left2{
     grid-area: about-left2;
 }
 
+about-left2 .box{
+    background-image: url();
+    background-size: cover;
+}
+
 about-left2{
     display: flex;
     align-items: center;
     justify-content: center;
 }
     
-#box-image{
+#box-image1{
+    background-image: url(https://i.pinimg.com/736x/4b/e1/6b/4be16bfdba23a2e7de50054d9efaf264.jpg);
+    background-position:center;
+    background-size: cover;
+    width: 70%;
+    height: 90%;
+    background-color: #9f9f9f;
+    border-radius: 10px;
+}
+
+#box-image2{
+    background-image: url(https://i.pinimg.com/736x/a6/e0/35/a6e03524312d3420968bd45cb56b045e.jpg);
+    background-size: cover;
+    width: 70%;
+    height: 90%;
+    background-color: #9f9f9f;
+    border-radius: 10px;
+}
+
+#box-image3{
+    background-image: url(https://i.pinimg.com/736x/47/09/c3/4709c33155c5ba03d69eef9fcc9214c5.jpg);
+    background-size: cover;
     width: 70%;
     height: 90%;
     background-color: #9f9f9f;
@@ -515,6 +541,58 @@ about-right2{
 about-left3{
     background-color: #ff69b4;
     grid-area: about-left3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.testimonial-card {
+  width: 80%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.testimonial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo2 {
+  width: 60px;
+}
+
+.stars {
+  color: #007bff;
+  font-size: 18px;
+}
+
+.testimonial-text {
+  margin-top: 20px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.testimonial-footer {
+  margin-top: 25px;
+}
+
+.testimonial-footer h4 {
+  margin: 0;
+  font-weight: 600;
+  color: #000;
+}
+
+.testimonial-footer p {
+  color: gray;
+  font-size: 14px;
+  margin-top: 4px;
 }
 
 about-right3{
@@ -526,8 +604,13 @@ about-right3{
 }
 
 about-left4{
-    background-color: #7fff00;
+    /* background-color: #7fff00; */
     grid-area: about-left4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
 }
 
 about-right4{
@@ -538,7 +621,129 @@ about-right4{
     grid-area: about-right4;
 }
 
-footer{
-    background-color: #708090;
-    grid-area: footer;
+footer {
+  grid-area: footer;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 60px 80px 30px;
+  border-radius: 20px 20px 0 0;
+  font-family: 'Poppins', sans-serif;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  width: 35px;
+}
+
+.footer-subtext {
+  margin: 15px 0;
+  color: #bdbdbd;
+}
+
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.subscribe-box input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background-color: #2a2a2a;
+  color: #fff;
+  width: 180px;
+}
+
+.subscribe-box button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe-box button:hover {
+  background-color: #0056cc;
+}
+
+.footer-lang {
+  margin-top: 15px;
+  color: #bdbdbd;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+  gap: 60px;
+  min-width: 400px;
+}
+
+.footer-links .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links h3 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #bdbdbd;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+.social-icons a {
+  color: #bdbdbd;
+  margin-left: 15px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
