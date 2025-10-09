@@ -1,1 +1,1 @@
-![About Us](screencapture-127-0-0-1-5500-2025-10-09-19_53_10)
+![Example Website](67cf64c35578866ec3bd3813_About%20Us%201.avif)
